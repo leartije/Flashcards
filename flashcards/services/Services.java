@@ -64,11 +64,11 @@ public abstract class Services {
         String num = null;
         while (true) {
             try {
-                Log.println("How many times to ask?");
+                Log.println(Msg.NUM_OF_QUESTION);
                 num = Log.nextLine();
                 return Integer.parseInt(num);
             } catch (Exception e) {
-                Log.println("\"" + num + "\"" + " is not valid number");
+                Log.printf(Msg.NOT_VALID_INPUT, num);
             }
         }
     }
