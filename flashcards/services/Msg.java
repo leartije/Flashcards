@@ -27,4 +27,7 @@ public class Msg {
     public static String THE_PAIR_HAS_BEEN_ADDED = "The pair (\"%s\":\"%s\") has been added.%n";
     public static String THE_LOG_HAS_BEEN_SAVED = "The log has been saved.";
     public static String BYE = "Bye, bye!";
+
+    public static String NUM_OF_QUESTION = "How many times to ask?";
+    public static String NOT_VALID_INPUT = "\"%s\" is not valid input%n";
 }
