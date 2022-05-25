@@ -106,6 +106,4 @@ public abstract class Services {
         hardestCards.forEach(s -> sb.append("\"").append(s).append("\"").append(", "));
         return sb.substring(0, sb.length() - 2);
     }
-
-
 }
