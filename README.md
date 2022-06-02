@@ -1,9 +1,9 @@
 # Flashcards
 Flashcards JetBrains academy project in 7 stages
 
-- Stage 1/7: Stage one, card one
+### Stage 1/7: Stage one, card one
 
-Description:
+**Description:**
 
 A flashcard is a digital or paper card that contains a term on one side, and a definition, translation, or explanation of that term on the other. Flashcards are often used for learning foreign languages and are an effective study technique for many people.
 
@@ -11,7 +11,7 @@ An example of a flashcard. The upper part is the term the user is being asked, t
 
 For this project, we’ll refer to the text on the front of the card as the term, and the text on the back will be the definition. There won't actually be any visual "front" and "back" side of a card: it'll all be done through sequential text. We'll ask the user for the definitions of the terms they previously entered, and check whether the given answers are correct. While developing this application, you will not only learn some programming but also save paper!
 
-Objectives
+**Objectives**
 
 Implement a program that outputs 4 lines:
 
@@ -21,15 +21,15 @@ The third line is Definition:
 The fourth line is the definition on the back of the card
 In this stage, the term and the definition can be anything you want.
 
-- Stage 2/7: What’s on the card
+### Stage 2/7: What’s on the card
 
-Description:
+**Description:**
 
 Of course, we cannot use flashcards with only one hardcoded card. So let's make our program more dynamic! Let’s create flashcards depending on the user's input and add a primitive guessing mechanism so that the user can check how well they remember the definitions.
 
 In this stage, you need to implement a custom flashcard-creation mechanism which will be extensively used in further steps, and add a mechanism to check the user's answer.
 
-Objectives:
+**Objectives:**
 
 Your program should read two lines from the console, a term, and a definition, that represent a card.
 
@@ -44,9 +44,9 @@ Of course, at this point, the user is unlikely to get the answer wrong, since th
 Examples
 The greater-than symbol followed by a space (> ) represents the user input. Note that it's not part of the input.
 
-- Stage 3/7: Make it your own
+### Stage 3/7: Make it your own
 
-Description:
+**Description:**
 
 Your program can only entertain users with one card, which isn’t really fun. Let's take our game to the next level and implement a set of flashcards.
 
@@ -54,7 +54,7 @@ Let the user decide how many cards they would like to make. First, ask the playe
 
 In the end, once all flashcards have been defined and saved, your program is finally ready to be used as a game! Question the player about all the new words they have entered. The program should give the term and ask for its definition.
 
-Objectives:
+**Objectives:**
 
 Your program should do the following:
 
@@ -62,9 +62,9 @@ Get the number of flashcards the user would like to create. To do that, print th
 Create the defined amount of cards in a loop. To create a flashcard, print the line Card #n: where n is the index number of the card to be created; then read the user's input (the term) from the following line. Then print the line The definition for card #n: and read the user's definition of the term from the next line. Repeat until all the flashcards are created.
 Test the user on their knowledge of the definitions of all terms in the order they were added. To do that with one flashcard, print the line Print the definition of "term": where "term" is the term of the flashcard to be checked, and then read the user's answer from the following line. Make sure to put the term of the flashcard in quotes. Then print the line Correct! if the user's answer is correct, or the line Wrong. The right answer is "definition". if the answer is incorrect, where "definition" is the correct definition. Repeat for all the flashcards in the set.
 
-- Stage 4/7: A good stack
+### Stage 4/7: A good stack
 
-Description:
+**Description:**
 
 While learning new things, we may mix things up and use the right definition for the wrong term. Let's inform our players if they enter the definition that is wrong for the requested flashcard but correct for another flashcard in our set.
 
@@ -72,7 +72,7 @@ Also, it might be very confusing if our flashcard set contains cards with the sa
 
 These two features will definitely improve our game!
 
-Objectives:
+**Objectives:**
 
 Modify your program to behave the following way:
 
@@ -80,9 +80,9 @@ When the user tries to add a duplicate term, forbid it and output the message Th
 When the user tries to add a duplicate definition, forbid it and Output the message The definition "definition" already exists. Try again: with the definition instead of "definition". Ask the player to input the definition until the user inputs a unique one.
 When the user enters the wrong definition for the requested term, but this definition is correct for another term, print the appropriate message Wrong. The right answer is "correct answer", but your definition is correct for "term for user's answer". , where "correct answer" is the actual definition for the requested term, and "term for user's answer" is the appropriate term for the user-entered definition.
 
-- Stage 5/7: Menu, please_
+### Stage 5/7: Menu, please_
 
-Description:
+**Description:**
 
 Our users cannot create new flashcards all the time. It seems like a good idea to keep old but useful cards in storage so we can use them later. Let's try to do that!
 
@@ -113,9 +113,9 @@ The program's behavior depends on the action the user inputs:
 - ask — ask the user about the number of cards they want to be asked about and then prompt them for definitions, like in the previous stage.
 - exit — print Bye bye! and finish the program.
 
-- Stage 6/7: Statistics
+### Stage 6/7: Statistics
 
-Description:
+**Description:**
 
 While studying, it may be very helpful to pay more attention to challenging parts where you make the most mistakes. In this stage, you will add some statistics features to your program so that the users can track their progress.
 
@@ -126,7 +126,7 @@ print the term or terms that the user makes most mistakes with: hardest card
 erase the mistake count for all cards: reset stats
 Remember that now you need to store three items (term, definition, mistakes) instead of two (term, definition).
 
-Objectives:
+**Objectives:**
 
 Print the message Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats): each time the user is prompted for their next action. The action is read from the next line, processed, and the message is output again until the user decides to exit the program.
 
@@ -137,13 +137,13 @@ The program's behavior depends on the user's input action:
 - reset stats — set the count of mistakes to 0 for all the cards and output the message Card statistics have been reset.
 - Update your import and export actions from the previous stage, so that the error count for each flashcard is also imported and exported.
 
-- Stage 7/7: IMPORTant
+### Stage 7/7: IMPORTant
 
-Description:
+**Description:**
 
 Files are used to save progress and restore it the next time the user runs the program. It's tedious to print the actions manually. Sometimes you can just forget to do it! Let's add run arguments that define which file to read at the start and which file to save at the exit.
 
-Objectives:
+**Objectives:**
 
 When provided with command-line arguments, your program should do the following:
 
